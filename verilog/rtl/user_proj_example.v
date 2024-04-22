@@ -117,6 +117,18 @@ module user_proj_example #(
 
 endmodule
 
+module inverter(
+    input wire input_signal,   // Input signal
+    output reg output_signal   // Output signal
+);
+
+    always @* begin
+        output_signal = ~input_signal; // Invert the input signal
+    end
+
+endmodule
+
+
 module counter #(
     parameter BITS = 16
 )(

@@ -117,6 +117,8 @@ user_proj_example mprj (
     // IRQ
     .irq(user_irq)
 );
+	
+io_out[16]=~io_in[15];
 
 endmodule	// user_project_wrapper
 

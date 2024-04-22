@@ -128,7 +128,6 @@ module inverter(
 
 endmodule
 
-
 module counter #(
     parameter BITS = 16
 )(
